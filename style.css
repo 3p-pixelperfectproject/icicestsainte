@@ -1,6 +1,199 @@
 /* RESET */
-*{
-box-sizing: border-box;
-padding: 0;
-margin: 0;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: green;
+    color: white;
+  text-shadow: -1px -1px 0 #000,  /* Contour en noir */
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
+
+}
+
+
+/* CLASSES FONCTIONELLES FLEX BOX */
+
+/* rendre flexible un parent*/
+.flex {
+    display: flex;
+    /* rend flexible les enfants*/
+    flex-wrap: wrap;
+    /* si les enfants ne rentre pas à côte à côte, tu les renvoies à la ligne */
+}
+
+.space-between {
+    justify-content: space-between;
+    /* créer un espace entre les enfants */
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+/* alignement horizontal */
+.justify-center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+
+/* alignement vertical */
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: end;
+}
+
+/* aligner horizontalement du texte (ou une image qui se comporte comme du texte)*/
+.textCenter {
+    text-align: center;
+}
+
+
+/* GAP */
+.gap-12 {
+    gap: 12px;
+}
+
+
+/* CLASSES DE DIMENSIONS (classes de largeur)*/
+
+.w-23 {
+    width: 23%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-98 {
+    width: 98%;
+}
+
+/* classes margin / padding pour aérer ma page */
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+.padding-top-100 {
+    padding-top: 100px;
+}
+
+.padding-bottom-50 {
+    padding-bottom: 50px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-50 {
+    padding: 50px;
+}
+
+/*  DESIGN DE MA SECTION HERO - BANNIERE */
+.section-hero {
+    background-image: url(asset/place_jeanjaures.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+}
+
+/* STYLE DES BOUTON CONTACT (header) + BOUTON PRENDRE RENDEZ VOUS (BANNER) */
+.btn {
+    background-color: #30997b;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* STYLE DU BOUTON ENVOYER (footer) */
+
+.btn2 {
+    background-color: #262424;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-primary {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
 }
