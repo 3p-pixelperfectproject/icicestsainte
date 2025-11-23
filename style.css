@@ -197,3 +197,12 @@ header ul {
     font-weight: 400;
     font-family: "Outfit", sans-serif;
 }
+
+.bg-Red{
+    background-color: red;
+}
+
+
+.bg-Blue{
+    background-color: blue;
+}
